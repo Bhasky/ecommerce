@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2 single-products">
+            <div class="card">
+                <div class="card-body">
+                    <img src="..." class="card-img-top" alt="...">
+                    <h5 class="card-title">Card title</h5>
+                    <select class="form-select mb-2" aria-label="Default select example">
+                        <option selected>100g - <span class="material-symbols-outlined">
+                                currency_rupee
+                            </span> 500</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><span
+                                        class="material-symbols-outlined">
+                                        remove
+                                    </span></button>
+                                <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><span
+                                        class="material-symbols-outlined">
+                                        add
+                                    </span></button>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="btn btn-primary">Add Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

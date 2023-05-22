@@ -1,0 +1,80 @@
+<div class="modal-content popup">
+    <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-body">
+        <ul class="nav nav-tabs d-none d-lg-flex" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="login" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Login</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="signup" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Sign
+                    Up</button>
+            </li>
+        </ul>
+        <div class="tab-content accordion" id="myTabContent">
+            <div class="tab-pane fade show active accordion-item" id="home-tab-pane" role="tabpanel"
+                aria-labelledby="login" tabindex="0">
+                <form #userlogin="ngForm" (ngSubmit)="onUserCreate(userlogin.value)">
+                    <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block"
+                        aria-labelledby="headingOne" data-bs-parent="#myTabContent">
+                        <div class="accordion-body">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="emailID" aria-describedby="emailHelp"
+                                        placeholder="Email ID" ngModel #email="ngModel" required name="email">
+                                    <p class="error-msg"><span *ngIf="email.invalid && email.touched">Please Enter Email
+                                            ID</span></p>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" class="form-control" id="password" placeholder="Password"
+                                        ngModel #password="ngModel" required name="password">
+                                    <p class="error-msg"><span *ngIf="password.invalid && password.touched">Please Enter Password </span>
+                                    </p>
+                                </div>
+                                <button type="submit" [disabled]="userlogin.invalid" class="btn btn-primary"
+                                    value="Login">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane fade accordion-item" id="profile-tab-pane" role="tabpanel" aria-labelledby="signup"
+                tabindex="0">
+                <div id="collapseTwo" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingTwo"
+                    data-bs-parent="#myTabContent">
+                    <div class="accordion-body">
+                        <form #loginForm="ngForm" (ngSubmit)="onUserCreate(loginForm.value)">
+                            <div class="mb-3">
+                                <!-- <input type="email" class="form-control" id="name" aria-describedby="emailHelp"
+                                    placeholder="Name*"> -->
+                                <input type="text" class="form-control" placeholder="Name*" name="uName" ngModel>
+
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email ID*" name="email" ngModel>
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                    else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="mobile" class="form-control" placeholder="Mobile No*" name="mobile"
+                                    ngModel>
+                                <div id="emailHelp" class="form-text">We'll never share your Mobile No with
+                                    anyone
+                                    else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control" placeholder="Password" name="password"
+                                    ngModel>
+                            </div>
+                            <button type="submit" class="btn btn-primary" value="User Create">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

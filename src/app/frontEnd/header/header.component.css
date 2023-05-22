@@ -1,0 +1,82 @@
+.dropdown-menu>li>a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+}
+
+.menu-header .logo img {
+    height: 40px;
+}
+
+#navbar-content a {
+    color: #000000;
+}
+
+#navbar-content a:hover {
+    color: #3162ad;
+}
+
+.dropdown-item:hover {
+    background: #3162ad;
+    color: #ffffff !important;
+}
+
+.header-cart .cart {
+    position: absolute;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 50px;
+    font-size: 13px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    left: -13px;
+    top: 3px;
+}
+
+.header-cart a {
+    text-decoration: none;
+}
+
+.header-cart .material-symbols-outlined {
+    vertical-align: bottom;
+}
+
+.top-header {
+    color: #fff;
+    vertical-align: middle;
+    padding: 5px 0;
+}
+
+.login a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.login span {
+    vertical-align: middle;
+    line-height: 10px;
+}
+
+.login .material-symbols-outlined {
+    font-size: 20px;
+}
+
+.category {
+    border-radius: 6px;
+}
+
+.category .nav-link {
+    color: #ffffff !important;
+}
+
+.top-call-us h5 {
+    font-size: 1rem;
+}
+
+.top-call-us .material-symbols-outlined {
+    color: green;
+}
+
+.top-call-us p {
+    font-size: 12px;
+}

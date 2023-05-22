@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+.orange-bg {
+    background-color: #f2723f;
+}
+
+.blue-bg {
+    background-color: #3162ad;
+}
+
+.popup .btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 9;
+}
+
+.error-msg {
+    color: red;
+    font-size: 14px;
+    padding-top: 5px;
+}
