@@ -1,0 +1,32 @@
+{
+  "seller": [
+    {
+      "id": 1,
+      "name": "bhaskar",
+      "email": "bhasky.aug11@gmail.com",
+      "mobile": "9841983999",
+      "password": "123456"
+    },
+    {
+      "uName": "Bhaskar G",
+      "email": "bhasky.aug11@gmail.com",
+      "mobile": "909467665",
+      "password": "12",
+      "id": 2
+    },
+    {
+      "uName": "Bhaskar G",
+      "email": "bhasky.aug11@gmail.com",
+      "mobile": "909467665",
+      "password": "",
+      "id": 3
+    },
+    {
+      "uName": "Bhaskar G",
+      "email": "bhasky.aug11@gmail.com",
+      "mobile": "909467665",
+      "password": "1",
+      "id": 4
+    }
+  ]
+}

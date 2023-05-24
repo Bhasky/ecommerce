@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { SellerService } from '../service/seller.service';
 import { signUp } from '../data-type';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-login',
@@ -10,7 +11,7 @@ import { signUp } from '../data-type';
 })
 export class UserLoginComponent implements OnInit {
 
-  constructor(private seller:SellerService){}
+  constructor(private seller: SellerService) { }
 
   // constructor(private http: HttpClient) {
 
@@ -27,12 +28,17 @@ export class UserLoginComponent implements OnInit {
 
 
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.seller.reloadSeller()
+  }
   onUserCreate(data: signUp): void {
     console.warn(data)
-    this.seller.userSignUp(data).subscribe((result)=>{
-      console.warn(result)
-    })
+    this.seller.userSignUp(data)
+  }
+
+  login(data: signUp): void {
+    console.warn(data)
+
   }
 
 }

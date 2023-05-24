@@ -15,7 +15,7 @@
         <div class="tab-content accordion" id="myTabContent">
             <div class="tab-pane fade show active accordion-item" id="home-tab-pane" role="tabpanel"
                 aria-labelledby="login" tabindex="0">
-                <form #userlogin="ngForm" (ngSubmit)="onUserCreate(userlogin.value)">
+                <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)">
                     <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block"
                         aria-labelledby="headingOne" data-bs-parent="#myTabContent">
                         <div class="accordion-body">
@@ -32,8 +32,7 @@
                                     <p class="error-msg"><span *ngIf="password.invalid && password.touched">Please Enter Password </span>
                                     </p>
                                 </div>
-                                <button type="submit" [disabled]="userlogin.invalid" class="btn btn-primary"
-                                    value="Login">Login</button>
+                                <button type="submit" class="btn btn-primary" value="Login">Login</button>
                             </form>
                         </div>
                     </div>

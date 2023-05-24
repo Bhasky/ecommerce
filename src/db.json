@@ -1,25 +1,11 @@
 {
   "seller": [
     {
+      "id": 1,
       "name": "bhaskar",
       "email": "bhasky.aug11@gmail.com",
       "mobile": "9841983999",
-      "password": "123456",
-      "id": 1
-    },
-    {
-      "name": "bhasky",
-      "email": "bhasky@gmail.com",
-      "mobile": "9841983999",
-      "password": "123456",
-      "id": 2
-    },
-    {
-      "uName": "Bhask",
-      "email": "bhasky1@gmail.com",
-      "mobile": "9094676685",
-      "password": "12345",
-      "id": 3
+      "password": "123456"
     }
   ]
 }
