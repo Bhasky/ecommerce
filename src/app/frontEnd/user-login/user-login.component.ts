@@ -10,10 +10,33 @@ import { Router } from '@angular/router';
   styleUrls: ['./user-login.component.css']
 })
 export class UserLoginComponent implements OnInit {
+  authError: String = '';
 
   constructor(private seller: SellerService) { }
 
-  // constructor(private http: HttpClient) {
+  ngOnInit(): void {
+    this.seller.reloadSeller()
+  }
+  onUserCreate(data: signUp): void {
+    console.warn(data);
+    this.seller.userSignUp(data);
+  }
+
+  login(data: signUp): void {
+    console.warn(data)
+    this.seller.userLogin(data);
+    this.seller.isLoginError.subscribe((isError) => {
+      if (isError) {
+        this.authError = "Email or password is not correct";
+      }
+    })
+
+  }
+
+}
+
+
+ // constructor(private http: HttpClient) {
 
   // }
 
@@ -25,23 +48,6 @@ export class UserLoginComponent implements OnInit {
   //     });
   // }
 
-
-
-
-  ngOnInit(): void {
-    this.seller.reloadSeller()
-  }
-  onUserCreate(data: signUp): void {
-    console.warn(data)
-    this.seller.userSignUp(data)
-  }
-
-  login(data: signUp): void {
-    console.warn(data)
-
-  }
-
-}
 
 
 

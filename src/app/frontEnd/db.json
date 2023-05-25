@@ -1,5 +1,4 @@
-{
-  "seller": [
+[
     {
       "uName": "hello",
       "email": "hello@gmail.com",
@@ -15,4 +14,3 @@
       "id": 2
     }
   ]
-}

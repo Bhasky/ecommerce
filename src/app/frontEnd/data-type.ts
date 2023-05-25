@@ -4,3 +4,7 @@ export interface signUp {
     mobile: number,
     password: string
 }
+export interface login {
+    email: string,
+    password: string
+}

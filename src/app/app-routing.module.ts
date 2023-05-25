@@ -6,11 +6,11 @@ import { HomeComponent } from './frontEnd/home/home.component';
 
 
 const routes: Routes = [
- {
-  component: HomeComponent,
-  path: '',
-  canActivate: [AuthGuard]
- }
+  {
+    component: HomeComponent,
+    path: '',
+    canActivate: [AuthGuard]
+  }
 ];
 
 @NgModule({

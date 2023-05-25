@@ -15,28 +15,22 @@
         <div class="tab-content accordion" id="myTabContent">
             <div class="tab-pane fade show active accordion-item" id="home-tab-pane" role="tabpanel"
                 aria-labelledby="login" tabindex="0">
-                <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)">
-                    <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block"
-                        aria-labelledby="headingOne" data-bs-parent="#myTabContent">
-                        <div class="accordion-body">
-                            <form>
-                                <div class="mb-3">
-                                    <input type="email" class="form-control" id="emailID" aria-describedby="emailHelp"
-                                        placeholder="Email ID" ngModel #email="ngModel" required name="email">
-                                    <p class="error-msg"><span *ngIf="email.invalid && email.touched">Please Enter Email
-                                            ID</span></p>
-                                </div>
-                                <div class="mb-3">
-                                    <input type="password" class="form-control" id="password" placeholder="Password"
-                                        ngModel #password="ngModel" required name="password">
-                                    <p class="error-msg"><span *ngIf="password.invalid && password.touched">Please Enter Password </span>
-                                    </p>
-                                </div>
-                                <button type="submit" class="btn btn-primary" value="Login">Login</button>
-                            </form>
-                        </div>
+                <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block" aria-labelledby="headingOne"
+                    data-bs-parent="#myTabContent">
+                    <div class="accordion-body">
+                        <p class="error">{{authError}}</p>
+                        <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email ID*" name="email" ngModel>
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control" placeholder="Password" name="password"
+                                    ngModel>
+                            </div>
+                            <button type="submit" class="btn btn-primary" value="Login">Login</button>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="tab-pane fade accordion-item" id="profile-tab-pane" role="tabpanel" aria-labelledby="signup"
                 tabindex="0">
