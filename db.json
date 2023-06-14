@@ -13,6 +13,13 @@
       "mobile": "909467665",
       "password": "1",
       "id": 2
+    },
+    {
+      "uName": "test test",
+      "email": "test@gmail.om",
+      "mobile": "+916000000",
+      "password": "1",
+      "id": 3
     }
   ]
 }

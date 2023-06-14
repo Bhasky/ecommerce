@@ -10,6 +10,8 @@ import { SliderComponent } from './frontEnd/home/slider/slider.component';
 import { NewArrivalsComponent } from './frontEnd/home/new-arrivals/new-arrivals.component';
 import { UserLoginComponent } from './frontEnd/user-login/user-login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './admin/login/login.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     SliderComponent,
     NewArrivalsComponent,
     UserLoginComponent,
+    LoginComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
